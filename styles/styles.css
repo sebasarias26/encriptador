@@ -1,0 +1,306 @@
+:root{
+    --color-fondo: #EFF1FA;
+    --color-primario: #0A3871;
+    --fuente-inter: 'Inter', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: var(--color-fondo);
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--fuente-inter);
+}
+header{
+    display: flex;
+    padding: 0%;
+    justify-content: center;
+    margin-bottom: 2em;
+    overflow: hidden;
+}
+.textArea{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+#encriptador{
+    height: 15em;
+    border: none;
+    resize: none;
+    background-color: var(--color-fondo);
+    font-family: var(--fuente-inter-700);
+    font-weight: 600;
+    font-size: 1.5em;
+    color: var(--color-primario);
+}
+.encryptButtons{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+#encrypt{
+    color: var(--color-fondo);
+    background-color: var(--color-primario);
+    border: none;
+    border-radius: 1em;
+    padding: 2em;
+    font-size: 1em;
+}
+.rightPart{
+    display: flex;
+    flex-direction: column;
+}
+#decrypt{
+    color: var(--color-primario);
+    border: 2px solid var(--color-primario);
+    border-radius: 1em;
+    padding: 2em;
+    font-size: 1em;
+}
+.copiar{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+#copy{
+    color: var(--color-primario);
+    border: 2px solid var(--color-primario);
+    border-radius: 1em;
+    padding: 1em;
+    font-size: 1em;
+}
+.decryptArea{
+    display: flex;
+    padding: 2.5em;
+    align-items: center;
+    gap: 2em;
+    margin-top: 1em;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 1em;
+}
+.mesage, .desc {
+    text-align: center;
+    font-family: var(--fuente-inter-700);
+    color: var(--color-primario);
+}
+.contectImage{
+    display: none;
+}
+@media screen and (min-width: 768px){
+    body{
+        padding: 2.5em;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+    header{
+        overflow: hidden;
+    }
+    .copiar{
+        background-color: white;
+        display: flex;
+        justify-content: center;
+    }
+    .logo{
+        content: url(../img/Logo-1.png);
+    }
+    .encryptButtons{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    #encrypt, #decrypt{
+        padding: 1.2em;
+        width: 20em;
+    }
+    .contectImage{
+        display: none;
+    }
+}
+@media screen and (min-width: 1024px){
+    body{
+        padding: 2.5em;
+    }
+    header{
+        overflow: hidden;
+    }
+    main{
+        display: flex;
+        flex-direction: row;
+        gap: 0.5em;
+    }
+    .copiar{
+        background-color: white;
+        display: flex;
+        justify-content: center;
+    }
+    #encriptador{
+        display: flex;
+        height: 13em;
+    }
+    .leftPart{
+        display: flex;
+        flex-direction: column;
+    }
+    .logo{
+        content: url(../img/Logo@2x.png);
+        transform: scale(0.5);
+    }
+    .decryptArea{
+        margin: 0;
+        height: 26em;
+        width: 20em;
+    }
+    .contectImage{
+        display: block;
+        width: 12em;
+        transform: scale(0.8);
+    }
+    .textArea{
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
+    .encryptButtons{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    #encrypt, #decrypt{
+        padding: 1.2em;
+        width: 20em;
+    }
+    .mesage, .desc {
+        text-align: left;
+    }
+}
+@media screen and (min-width: 1280px){
+    body{
+        padding: 2.5em;
+    }
+    header{
+        overflow: hidden;
+    }
+    main{
+        display: flex;
+        flex-direction: row;
+        gap: 2em;
+        justify-content: center;
+    }
+    .decryptArea{
+        margin: 0;
+        height: 30em;
+        width: 25em;
+    }
+    .copiar{
+        background-color: white;
+        display: flex;
+        justify-content: center;
+    }
+    #encriptador{
+        width: 30em;
+        height: 15em;
+    }
+    .leftPart{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo{
+        content: url(../img/Logo@2x.png);
+        width: 250px; 
+        height: auto;
+    }
+    .decryptArea{
+        margin: 0;
+    }
+    .contectImage{
+        display: block;
+        width: 300px; 
+        height: auto;
+    }
+    .textArea{
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        align-items: center;
+    }
+    .encryptButtons{
+        display: flex;
+        flex-direction: row;
+        gap: 1em;
+        justify-content: center;
+    }
+    .mesage, .desc {
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 2024px){
+    body{
+        padding: 2.5em;
+    }
+    header{
+        overflow: hidden;
+    }
+    main{
+        display: flex;
+        flex-direction: row;
+        gap: 2em;
+        justify-content: center;
+    }
+    .decryptArea{
+        margin: 0;
+        height: 55em;
+        width: 35em;
+    }
+    .copiar{
+        background-color: white;
+        display: flex;
+        justify-content: center;
+    }
+    #encriptador{
+        width: 50em;
+        height: 30em;
+    }
+    .leftPart{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo{
+        content: url(../img/Logo@2x.png);
+        width: 250px; 
+        height: auto;
+    }
+    .decryptArea{
+        margin: 0;
+    }
+    .contectImage{
+        display: block;
+        width: 300px; 
+        height: auto;
+    }
+    .textArea{
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        align-items: center;
+    }
+    .encryptButtons{
+        display: flex;
+        flex-direction: row;
+        gap: 1em;
+        justify-content: center;
+    }
+    #encrypt, #decrypt, #copy{
+        padding: 1.5em 2em; 
+        font-size: 1.2em; 
+    }
+    .mesage, .desc {
+        text-align: center;
+    }
+}
